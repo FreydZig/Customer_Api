@@ -8,19 +8,19 @@ using System.Threading.Tasks;
 
 namespace EFRepository.Repositories
 {
-    public class AddressRepository: IRepository<Address>
+    public class NoteRepository: IRepository<Note>
     {
         private readonly CustomerDbContext _context;
 
-        public AddressRepository()
+        public NoteRepository()
         {
             _context = new CustomerDbContext();
         }
 
-        public void Create(Address entity)
+        public void Create(Note entity)
         {
             _context
-                .Addresses
+                .Notes
                 .Add(entity);
             _context
                 .SaveChanges();
@@ -28,36 +28,36 @@ namespace EFRepository.Repositories
 
         public void Delete(int entityCode)
         {
-            var address = _context
-                .Addresses
-                .FirstOrDefault(c => c.AddressId == entityCode);
+            var note = _context
+                .Notes
+                .FirstOrDefault(c => c.NoteId == entityCode);
 
             _context
-                .Addresses
-                .Remove(address);
+                .Notes
+                .Remove(note);
 
             _context.SaveChanges();
         }
 
-        public List<Address> GetAll(int entityCode)
+        public List<Note> GetAll(int entityCode)
         {
-            var addresses = _context
-                .Addresses              
+            var notes = _context
+                .Notes
                 .Where(a => a.CustomerId == entityCode)
                 .ToList();
 
-            return addresses;
+            return notes;
         }
 
-        public Address Read(int entityCode)
+        public Note Read(int entityCode)
         {
             return _context
-                       .Addresses
-                       .FirstOrDefault(c => c.AddressId == entityCode);
+                       .Notes
+                       .FirstOrDefault(c => c.NoteId == entityCode);
 
         }
 
-        public void Update(Address entity)
+        public void Update(Note entity)
         {
             _context
                 .Entry(entity)
