@@ -7,9 +7,7 @@ namespace EFRepository.Repositories
     {
         public CustomerDbContext()
             : base("Data Source=localhost\\SQLEXPRESS;Initial Catalog=CustomerLib_Demin;Integrated Security=True")
-        {
-
-        }
+        {}
 
         public IDbSet<Customer> Customer { get; set; }
         public IDbSet<Address> Addresses { get; set; }

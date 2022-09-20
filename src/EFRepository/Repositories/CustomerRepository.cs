@@ -35,7 +35,7 @@ namespace EFRepository.Repositories
             _context.SaveChanges();
         }
 
-        public List<Customer> GetAll()
+        public List<Customer> GetAll(int entityCode)
         {
             var customers = _context.Customer.ToList();
 

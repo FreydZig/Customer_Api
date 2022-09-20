@@ -73,7 +73,7 @@ namespace EFRerpository.tests.Repositories
         {
             var customerRepository = new CustomerRepository();
 
-            var customers = customerRepository.GetAll();
+            var customers = customerRepository.GetAll(1);
 
             Assert.Equal(2, customers.Count);
         }
