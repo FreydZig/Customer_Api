@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "529ff9f2-09fa-4efa-b80d-20b6d00dbbe9": {
+      "ProjectGuid": "529ff9f2-09fa-4efa-b80d-20b6d00dbbe9",
+      "DisplayName": "Customer_Api",
+      "ColorIndex": 0
+    },
+    "94cd2414-5131-4ae6-a62c-9fcef2222c69": {
+      "ProjectGuid": "94cd2414-5131-4ae6-a62c-9fcef2222c69",
+      "DisplayName": "EFRepository",
+      "ColorIndex": 1
+    },
+    "b7848891-c44b-4ae0-8cbe-4e48b6b2a7cc": {
+      "ProjectGuid": "b7848891-c44b-4ae0-8cbe-4e48b6b2a7cc",
+      "DisplayName": "EFRerpository.tests",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Прочие файлы",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 3
+}
